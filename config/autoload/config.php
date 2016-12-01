@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: diana
- * Date: 16-11-30
- * Time: 上午10:39
- */
 
 $certPath = dirname($_SERVER['DOCUMENT_ROOT']) . '/security';
 
