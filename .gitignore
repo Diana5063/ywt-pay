@@ -1,0 +1,7 @@
+.idea/*
+.directory
+*.iml
+vendor/zendframework/*
+*.lock
+uploads/*
+/.project
