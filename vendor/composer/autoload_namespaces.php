@@ -6,9 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ZendXml\\' => array($vendorDir . '/zendframework/zendxml/library'),
-    'SecurityLib' => array($vendorDir . '/ircmaxell/security-lib/lib'),
-    'Rs\\Json' => array($vendorDir . '/php-jsonpointer/php-jsonpointer/src', $vendorDir . '/php-jsonpatch/php-jsonpatch/src'),
-    'RandomLib' => array($vendorDir . '/ircmaxell/random-lib/lib'),
-    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src')
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
 );

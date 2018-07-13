@@ -1,0 +1,20 @@
+{
+    "name": "ywt-application",
+    "description": "Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "~2.5"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.zendframework.com"
+        }
+    ]
+}
