@@ -1,7 +1,10 @@
 <?php
 
-error_reporting(E_ALL);
+//error_reporting(E_ALL);
 ini_set("display_errors", 1);
+
+//ini_set("error_reporting", E_ALL & ~ E_DEPRECATED & ~E_USER_DEPRECATED  & ~ E_STRICT);
+error_reporting(E_ALL & ~ E_DEPRECATED & ~ E_USER_DEPRECATED & ~ E_STRICT);
 
 /**
  * This makes our life easier when dealing with paths. Everything is relative

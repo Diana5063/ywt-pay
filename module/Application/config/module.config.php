@@ -3,12 +3,23 @@
 return [
     'router' => [
         'routes' => [
-            '/index' => [
+            'home' => [
                 'type' => 'literal',
                 'options' => [
-                    'route' => '/index',
+                    'route' => '/',
                     'defaults' => [
                         'controller' => 'Application\Controller\Index',
+                        'action' => 'index'
+                    ]
+                ]
+            ],
+            'application' => [
+                'type' => 'literal',
+                'options' => [
+                    'route' => '/application',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Index',
                         'action' => 'index'
                     ]
                 ],
@@ -17,8 +28,11 @@ return [
                     'default' => [
                         'type' => 'segment',
                         'options' => [
-                            'route' => '[/:action]',
-                            'defaults' => ['action' => '[a-zA-Z]*']
+                            'route' => '/[:controller[/:action]]',
+                            'constraints' => [
+                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                            ]
                         ]
                     ]
                 ]
